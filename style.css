@@ -5,6 +5,10 @@ body{
     background-color: black;
     color: white;
 }
+.white{
+    background-color: white;
+    color: black;
+}
 nav{
     position: sticky;
     top: 0;
@@ -18,13 +22,10 @@ nav{
     justify-content: space-around;
     background-color: black;
 }
-body section:nth-child(even){
-    background-color: white;
-    color: black;
-}
-nav > img {
-    max-height: 50%;
-    width: auto;
+
+nav a img {
+    max-height: 30px;
+    margin-top: 0;
 }
 section{
     height: 50vh;
@@ -64,9 +65,19 @@ p{
 .vcard{
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
 }
-a{
+.vcard a{
     z-index: 1;
+    height: 20%;
+    width: 40%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    text-decoration: none;
+    font-size: 25px;
 }
 .cssCurve{
     position: absolute;
@@ -113,10 +124,11 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-    
 }
-
 .layer1{
     background-image:url(./img/layered-waves-haikei.svg);
+}
+.blob-motion{
+    position: absolute;
+    transform: translateY(30%);
 }

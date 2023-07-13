@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-color: black;
+    color: white;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 7vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+body section:nth-child(even){
+    background-color: white;
+    color: black;
+}
+nav > img {
+    max-height: 50%;
+    width: auto;
+}
+section{
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+}
+#building{
+    max-height: 100%;
+}
+section div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brands{
+    height: 25vh;
+    padding-top: 10vh;
+}
+h1{
+    margin: 0 0 16px 0;
+    letter-spacing: -0.5px;
+}
+h2{
+    margin: 0 0 0 0;
+    letter-spacing: -0.5px;
+}
+p{
+    margin-top: 32px;
+    width: 600px;
+}
+.vcard{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    z-index: 1;
+}
+.cssCurve{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.cssCurve::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 1000%; 
+    background-color: black;
+    height: 50%;
+    width: 100%;
+    transform: translate(0,100%);
+}
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 170px;
+}
+
+.wave .shape-fill {
+    fill: #000000;
+}
+.top_css_wave{
+    padding-bottom: 60px;
+}
+.spacer{
+    position: absolute;
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.layer1{
+    background-image:url(./img/layered-waves-haikei.svg);
+}
